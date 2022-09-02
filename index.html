@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+  <link rel="stylesheet" href="style.css">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <header>
+    <h1 id="page-header">Rock Paper Scissors</h1>
+  </header>
+  <main>
+    <div class="icon-header">
+      <p>Click these icons to choose your turn</p>
+    </div>
+    <!-- START OF GAME ICONS HEADER HERE -->
+    <div class="game-icons" id="game-icons">
+      <div class="icon rock"><i class="fa-regular fa-hand-back-fist fa-7x" id="icon-rock"></i></div>
+      <div class="icon paper"><i class="fa-regular fa-hand fa-7x" id="icon-paper"></i></div>
+      <div class="icon scissors"><i class="fa-regular fa-hand-scissors fa-7x" id="icon-scissors"></i></div>
+    </div>
+    <div class="icon-subheader">
+      <p>First to 5 wins</p>
+    </div>
+    <!-- END OF GAME ICONS HEADER HERE -->
+    <!-- START OF SCORE GRID HERE -->
+    <div class="game-scores">
+      <div class="score-header">
+        <p id="score-header">START BY CLICKING AN ICON</p>
+      </div>
+      <div class="score-grid">
+        <!-- START OF PERSON SCORE HERE -->
+        <div class="score-item 1">
+          <div class="first-line">
+            <i class="head fa-solid fa-person fa-5x"></i>
+            <p>(You):</p>
+            <p id="user-score">0</p>
+          </div>
+          <div class="second-line">
+            <i class="fa-regular fa-hand-back-fist fa-3x" id="user-rock"></i>
+            <i class="fa-regular fa-hand fa-3x" id="user-paper"></i>
+            <i class="fa-regular fa-hand-scissors fa-3x" id="user-scissors"></i>
+          </div>
+        </div>
+        <!-- END OF PERSON SCORE -->
+        <!-- START OF COMPUTER SCORE HERE -->
+        <div class="score-item 2">
+          <div class="first-line">
+            <i class="head fa-solid fa-robot fa-5x"></i>
+            <p>(PC):</p>
+            <p id="computer-score">0</p>
+          </div>
+          <div class="second-line">
+            <i class="fa-regular fa-hand-back-fist fa-3x" id="computer-rock"></i>
+            <i class="fa-regular fa-hand fa-3x" id="computer-paper"></i>
+            <i class="fa-regular fa-hand-scissors fa-3x" id="computer-scissors"></i>
+          </div>
+        </div>
+        <!-- END OF COMPUTER SCORE HERE -->
+      </div>
+    </div>
+    <!-- END OF SCORE GRID HERE -->
+  </main>
+  <footer>
+    <p>Developed for the The Odin Project © Dee, John Christopher 2022</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
+
