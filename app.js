@@ -113,8 +113,9 @@ function decider(usr,cmp) {
           }
         break;
       case 'Paper':
+          console.log('you chose paper');
           if(cmp === 'Rock') {
-            caddUserScore(usr);
+            addUserScore(usr);
           } else if (cmp === 'Scissors') {
             addComputerScore();
           }
