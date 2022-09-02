@@ -3,7 +3,7 @@ const actionArray = ['Rock', 'Paper', 'Scissors'];
 const allGameIcons = document.querySelectorAll('#game-icons > .icon > i');
 const gameIcons = document.getElementById('game-icons');
 const scoreHeader = document.getElementById('score-header');
-// const rockClicked = document.getElementById('icon-rock').addEventListener('click', buttonClick)
+const tryAgain = document.getElementById('try-again');
 // END OF VARIABLE DECLARATIONS HERE -->
 
 // <-- ADD EVENT LISTENERS TO GAME ICONS
@@ -113,7 +113,6 @@ function decider(usr,cmp) {
           }
         break;
       case 'Paper':
-          console.log('you chose paper');
           if(cmp === 'Rock') {
             addUserScore(usr);
           } else if (cmp === 'Scissors') {
@@ -178,3 +177,14 @@ try {
 
 }
 // END OF BUTTON ACTION HERE -->
+
+// <-- BUTTON TO REFRESH PAGE HERE
+tryAgain.addEventListener('click',reload);
+// END OF BUTTON TO REFRESH PAGE -->
+
+
+// <-- FUNCTION TO REFRESH PAGE
+function reload() {
+  document.location.reload();
+}
+// END OF FUNCTION TO REFRESH -->
