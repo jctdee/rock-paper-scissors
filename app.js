@@ -136,8 +136,8 @@ function decider(usr,cmp) {
 // <-- START OF FUNCTION HERE TO STOP IF SCORE IS 5
 function scoreChecker(score, who) {
   if(score === 5) {
-    console.log('i am working to see if score is 5');
     gameIcons.style.pointerEvents = 'none';
+    tryAgain.style.display = 'inline';
     switch(who) {
       case('User'):
         scoreHeader.innerHTML = 'You have reached 5 pts. You win';

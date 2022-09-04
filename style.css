@@ -141,6 +141,7 @@ main {
 }
 
 .try-again input {
+  display: none;
   width: 150px;
   height: 50px;
   font-weight: 400;
